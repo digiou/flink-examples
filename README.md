@@ -8,3 +8,7 @@ Simply remove the dependencies in the `build.sbt` file and add your own.
 
 ## Run
 Simply `sbt run`.
+
+## Test
+
+Run `sbt test`.
