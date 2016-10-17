@@ -10,7 +10,8 @@ libraryDependencies ++= Seq(
   "org.apache.flink" %% "flink-scala" % flinkVersion,
   "org.apache.flink" %% "flink-clients" % flinkVersion,
   "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
-  "org.apache.flink" %% "flink-cep-scala" % flinkVersion
+  "org.apache.flink" %% "flink-cep-scala" % flinkVersion,
+  "org.apache.flink" %% "flink-connector-rabbitmq" % flinkVersion
 )
 
 val scalaTestVersion = "3.0.0"
