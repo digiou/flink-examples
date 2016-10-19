@@ -1,7 +1,8 @@
-package com.customedialabs
+package com.customedialabs.examples
 
-import collection.mutable.Stack
 import org.scalatest._
+
+import scala.collection.mutable.Stack
 
 /**
   * Created by digiou on 17/10/2016.
