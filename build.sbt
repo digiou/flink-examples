@@ -21,4 +21,4 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
 )
 
-fork in run := true
+mainClass in (Compile, run) := Some("com.customedialabs.examples.SocketExample")
