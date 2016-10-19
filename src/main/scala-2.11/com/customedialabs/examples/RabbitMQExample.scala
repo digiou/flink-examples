@@ -8,6 +8,11 @@ import org.apache.flink.streaming.util.serialization.SimpleStringSchema
 
 /**
   * Created by digiou on 19/10/2016.
+  *
+  * Creates a connection to a local RabbitMQ instance.
+  * Queue's name is hello, gets created if not present.
+  *
+  * A count for every word in the queue in a 7-sec window is printed.
   */
 object RabbitMQExample extends App {
 

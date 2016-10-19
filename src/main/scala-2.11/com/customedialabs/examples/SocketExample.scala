@@ -5,6 +5,11 @@ import org.apache.flink.streaming.api.windowing.time.Time
 
 /**
   * Created by digiou on 17/10/2016.
+  *
+  * Listens to a raw socket on port 9999.
+  * Prints the word count from the socket every 7-sec.
+  *
+  * Must be used with "nc -lk 9999" in a Unix/like terminal.
   */
 object SocketExample extends App {
   val env = StreamExecutionEnvironment.getExecutionEnvironment
