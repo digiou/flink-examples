@@ -1,24 +1,30 @@
 package com.customedialabs.examples.Util;
 
+import java.io.IOException;
+
 import com.customedialabs.examples.events.EventExample;
+import com.google.gson.*;
 import org.apache.flink.annotation.PublicEvolving;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.streaming.util.serialization.DeserializationSchema;
 import org.apache.flink.streaming.util.serialization.SerializationSchema;
 
-import java.io.IOException;
-
 /**
  * Created by digiou on 26/10/2016.
  */
 @PublicEvolving
-public class EventSchema implements DeserializationSchema<EventExample>, SerializationSchema<EventExample> {
+public class EventExampleSchema implements DeserializationSchema<EventExample>, SerializationSchema<EventExample> {
 
     private static final long serialVersionUID = 1L;
 
     @Override
     public EventExample deserialize(byte[] message) throws IOException {
-        return null;
+        String messageStr = new String(message);
+
+        Gson gsonObj = new GsonBuilder()
+                .create();
+
+        return gsonObj.fromJson(messageStr, EventExample.class);
     }
 
     @Override
@@ -33,6 +39,9 @@ public class EventSchema implements DeserializationSchema<EventExample>, Seriali
 
     @Override
     public byte[] serialize(EventExample element) {
-        return new byte[0];
+        Gson gsonObj = new GsonBuilder()
+                .create();
+
+        return gsonObj.toJson(element).getBytes();
     }
 }
