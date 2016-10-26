@@ -21,4 +21,10 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
 )
 
-mainClass in (Compile, run) := Some("com.customedialabs.examples.RabbitMQExample")
+val gsonVersion = "2.7"
+
+libraryDependencies ++= Seq(
+  "com.google.code.gson" % "gson" % gsonVersion
+)
+
+mainClass in (Compile, run) := Some("com.customedialabs.examples.CEPExample")
