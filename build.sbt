@@ -4,6 +4,10 @@ version := "0.0.1"
 organization := "com.customedialabs"
 scalaVersion := "2.11.8"
 
+resolvers ++= Seq(
+  "apache snapshots" at "https://repository.apache.org/content/repositories/snapshots/"
+)
+
 val flinkVersion = "1.1.3"
 
 libraryDependencies ++= Seq(
@@ -21,10 +25,10 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
 )
 
-val gsonVersion = "2.7"
+val avroVersion = "1.8.0"
 
 libraryDependencies ++= Seq(
-  "com.google.code.gson" % "gson" % gsonVersion
+  "org.apache.avro" % "avro" % avroVersion
 )
 
 mainClass in (Compile, run) := Some("com.customedialabs.examples.CEPExample")
