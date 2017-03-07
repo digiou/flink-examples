@@ -1,7 +1,7 @@
 name := "flink-examples"
 
 version := "0.0.1"
-organization := "com.customedialabs"
+organization := "xyz.digiou"
 scalaVersion := "2.11.8"
 
 resolvers ++= Seq(
@@ -31,4 +31,4 @@ libraryDependencies ++= Seq(
   "org.apache.avro" % "avro" % avroVersion
 )
 
-mainClass in (Compile, run) := Some("com.customedialabs.examples.CEPExample")
+mainClass in (Compile, run) := Some("xyz.digiou.examples.CEPExample")

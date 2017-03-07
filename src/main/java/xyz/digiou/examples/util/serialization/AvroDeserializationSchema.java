@@ -1,6 +1,6 @@
-package com.customedialabs.examples.util.serialization;
+package xyz.digiou.examples.util.serialization;
 
-import com.customedialabs.examples.events.EventExample;
+import xyz.digiou.examples.events.EventExample;
 import org.apache.avro.Schema;
 import org.apache.avro.io.*;
 import org.apache.avro.reflect.ReflectData;
@@ -12,9 +12,6 @@ import org.apache.flink.streaming.util.serialization.DeserializationSchema;
 
 import java.io.IOException;
 
-/**
- * Created by digiou on 27/10/2016.
- */
 public class AvroDeserializationSchema<T> implements DeserializationSchema<T> {
 
     private final Class<T> avroType;

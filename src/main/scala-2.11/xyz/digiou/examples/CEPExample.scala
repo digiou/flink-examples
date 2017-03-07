@@ -1,13 +1,12 @@
-package com.customedialabs.examples
+package xyz.digiou.examples
 
-import com.customedialabs.examples.events.EventExample
-import com.customedialabs.examples.util.serialization.AvroDeserializationSchema
+import xyz.digiou.examples.events.EventExample
 import org.apache.flink.cep.scala.CEP
 import org.apache.flink.cep.scala.pattern._
-import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.connectors.rabbitmq.RMQSource
 import org.apache.flink.streaming.connectors.rabbitmq.common.RMQConnectionConfig
+import xyz.digiou.examples.util.serialization.AvroDeserializationSchema
 
 /**
   * Created by digiou on 19/10/2016.

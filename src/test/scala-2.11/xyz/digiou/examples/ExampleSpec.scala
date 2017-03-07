@@ -1,4 +1,4 @@
-package com.customedialabs.examples
+package xyz.digiou.examples
 
 import org.scalatest._
 

@@ -1,11 +1,9 @@
-package com.customedialabs.examples
+package xyz.digiou.examples
 
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.windowing.time.Time
 
 /**
-  * Created by digiou on 17/10/2016.
-  *
   * Listens to a raw socket on port 9999.
   * Prints the word count from the socket every 7-sec.
   *

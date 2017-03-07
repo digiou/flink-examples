@@ -1,4 +1,4 @@
-package com.customedialabs.examples
+package xyz.digiou.examples
 
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.windowing.time.Time
@@ -7,8 +7,6 @@ import org.apache.flink.streaming.connectors.rabbitmq.common.RMQConnectionConfig
 import org.apache.flink.streaming.util.serialization.SimpleStringSchema
 
 /**
-  * Created by digiou on 19/10/2016.
-  *
   * Creates a connection to a local RabbitMQ instance.
   * Queue's name is hello, gets created if not present.
   *
